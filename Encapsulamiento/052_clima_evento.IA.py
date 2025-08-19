@@ -37,7 +37,7 @@ class mi_clima_ia:
     def predicir_clima(self,entradas:list[float]):
         return self._clima_ia.procesar(entradas)
 if __name__=="__main__":
-    mi_neurona = ClasificiadorBinario(pesos=[0.5, -0.8],sesgo =0.2,umbral=0.4)
+    mi_neurona = ClasificiadorBinario()
     print("---Entrenando Neurona---")
     #Datos de entrenamiento del Ejercicio
     datos_clima = [([25, 0.1],True),
